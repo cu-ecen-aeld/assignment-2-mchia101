@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     FILE *file = fopen(argv[1], "a+"); 
     if(file == NULL) {
         perror("Error opening file");
-        syslog(LOG_ERR, "Error opening file: %s", argv[1]);
+        syslog(LOG_ERR, "Error opening file: %s", argv[1]);  
         return 1;
     }
 
